@@ -1,7 +1,7 @@
 import "./styles.css";
 import { releaseData } from "./data.ts";
 import { useEffect, useState } from "react";
-import ReleaseBox from "./components/ReleaseBox";
+import ReleaseCard from "./components/ReleaseCard";
 
 export default function App() {
   const [data, setData] = useState([]);
@@ -22,7 +22,7 @@ export default function App() {
       </p>
       <div className="grid-container">
         {data.map((release) => (
-          <ReleaseBox data={release} />
+          <ReleaseCard data={release} />
         ))}
       </div>
     </div>

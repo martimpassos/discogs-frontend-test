@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 
-class ReleaseBox extends Component {
+class ReleaseCard extends Component {
   // Component logic and methods
 
   render() {
     const { data } = this.props;
     const { link } = `https://www.discogs.com/release/${data.id}`;
     return (
-      <div>
+      <div className="release-card">
         <a
           className="thumb"
           key={data.id}
@@ -15,13 +15,13 @@ class ReleaseBox extends Component {
         >
           <img src={data.thumb} alt="Image" />
         </a>
-        <div>
+        <div className="release-title">
           {/* <span className="release-title">{data.title}</span> */}
-          <a className="release-title" href="">
+          <a className="" href={`https://www.discogs.com/release/${data.id}`}>
             {data.title}
           </a>
         </div>
-        <div>
+        <div className="release-artist">
           <span className="release-artist">{data.artist}</span>
         </div>
       </div>
@@ -29,4 +29,4 @@ class ReleaseBox extends Component {
   }
 }
 
-export default ReleaseBox;
+export default ReleaseCard;

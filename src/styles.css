@@ -9,19 +9,31 @@
   grid-gap: 10px;
 }
 
+.release-card {
+  width: 150px;
+  margin: 9px 0 15px;
+  /* border: 1px solid black; */
+}
+
 .thumb {
-  //padding-top: 100%;
-  //padding: 1px;
+  /* padding-top: 100%; */
+  /* padding: 1px; */
   width: 100%;
   background-color: #eaeaea;
-  //border: 1px solid rgb(133, 133, 133);
-  margin: 9px 9px;
+  /* margin: 9px 0 0; */
 }
 
 .release-title {
   text-align: left;
+  margin: 9px 0 0;
+  font-size: 13pt;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .release-artist {
   text-align: left;
+  margin: 7px 0 0;
 }
